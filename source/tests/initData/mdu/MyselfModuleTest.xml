@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetUserLevelInfo begin-->
+    <testGetUserLevelInfo dbAdapter="ucenter" table="cloud_users" method="delete">
+        <data>
+            <where>`u_mobi` in (15280222222, 15280222223, 15280222223) OR `u_id` in (100, 101)</where>
+        </data>
+    </testGetUserLevelInfo>
+    <testGetUserLevelInfo dbAdapter="ucenter" table="cloud_user_wallets" method="delete">
+        <data>
+            <where>`u_id` in (100, 101)</where>
+        </data>
+    </testGetUserLevelInfo>
+    <testGetUserLevelInfo dbAdapter="ucenter" table="cloud_users" method="insert">
+        <data>
+            <u_mobi>15280222223</u_mobi>
+        </data>
+    </testGetUserLevelInfo>
+    <testGetUserLevelInfo dbAdapter="ucenter" table="cloud_users" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <u_mobi>"15280222224"</u_mobi>
+        </data>
+    </testGetUserLevelInfo>
+    <testGetUserLevelInfo dbAdapter="ucenter" table="cloud_user_wallets" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <uw_coins>150</uw_coins>
+            <uw_all_coins>1500</uw_all_coins>
+        </data>
+    </testGetUserLevelInfo>
+    <!-- method testGetUserLevelInfo end-->
+
+    <!-- method testDisturb begin-->
+    <testDisturb dbAdapter="appserv" table="cloud_dev_tags" method="delete">
+        <data>
+            <where>`u_id` in (102, 103)</where>
+        </data>
+    </testDisturb>
+    <testDisturb dbAdapter="appserv" table="cloud_dev_tags" method="insert">
+        <data>
+            <u_id>102</u_id>
+            <dt_disturb>1</dt_disturb>
+        </data>
+    </testDisturb>
+    <!-- method testDisturb end-->
+</init>

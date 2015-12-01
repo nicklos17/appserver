@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testLocateInfo begin-->
+    <testLocateInfo dbAdapter="appserv" table="cloud_locus_info" method="delete">
+        <data>
+            <where>`baby_id` = 200</where>
+        </data>
+    </testLocateInfo>
+    <testLocateInfo dbAdapter="appserv" table="cloud_locus_info" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <li_start>1435766654</li_start>
+        </data>
+    </testLocateInfo>
+    <!-- method testLocateInfo end-->
+</init>

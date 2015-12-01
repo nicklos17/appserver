@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetOldRank begin-->
+    <testGetOldRank dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` in (200, 201)</where>
+        </data>
+    </testGetOldRank>
+    <testGetOldRank dbAdapter="appserv" table="cloud_baby_ranks" method="delete">
+        <data>
+            <where>`baby_id` in (200, 201)</where>
+        </data>
+    </testGetOldRank>
+    <testGetOldRank dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <baby_pic>"/static/baby_pic.png"</baby_pic>
+        </data>
+    </testGetOldRank>
+    <testGetOldRank dbAdapter="appserv" table="cloud_baby_ranks" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <br_mileages>336</br_mileages>
+            <br_guards>87</br_guards>
+        </data>
+    </testGetOldRank>
+    <!-- method testGetOldRank end-->
+
+    <!-- method testGetTodayRank begin-->
+    <testGetTodayRank dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` in (200, 201)</where>
+        </data>
+    </testGetTodayRank>
+    <testGetTodayRank dbAdapter="appserv" table="cloud_baby_ranks" method="delete">
+        <data>
+            <where>`baby_id` in (200, 201)</where>
+        </data>
+    </testGetTodayRank>
+    <testGetTodayRank dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <baby_pic>"/static/baby_pic.png"</baby_pic>
+        </data>
+    </testGetTodayRank>
+    <testGetTodayRank dbAdapter="appserv" table="cloud_baby_ranks" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <br_mileages>336</br_mileages>
+            <br_guards>87</br_guards>
+        </data>
+    </testGetTodayRank>
+    <!-- method testGetTodayRank end-->
+</init>

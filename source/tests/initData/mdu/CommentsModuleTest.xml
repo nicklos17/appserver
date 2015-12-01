@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testDelComment begin-->
+    <testDelComment dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`locus_id` = 400</where>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_locus_comments" method="delete">
+        <data>
+            <where>`lc_id` in (300, 301) OR `u_id` in (100, 101)</where>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`baby_id` = 200 OR `u_id` = 100</where>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+            <locus_id>400</locus_id>
+            <locus_comments>5</locus_comments>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_locus_comments" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <lc_id>300</lc_id>
+            <locus_id>400</locus_id>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_locus_comments" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <lc_id>301</lc_id>
+        </data>
+    </testDelComment>
+    <testDelComment dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <baby_id>200</baby_id>
+            <family_comments>10</family_comments>
+        </data>
+    </testDelComment>
+    <!-- method testDelComment end-->
+
+    <!-- method testGetCommentList begin-->
+    <testGetCommentList dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`locus_id` in (401, 402)</where>
+        </data>
+    </testGetCommentList>
+    <testGetCommentList dbAdapter="appserv" table="cloud_locus_comments" method="delete">
+        <data>
+            <where>`locus_id` in (401, 402)</where>
+        </data>
+    </testGetCommentList>
+    <testGetCommentList dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <locus_id>401</locus_id>
+        </data>
+    </testGetCommentList>
+    <testGetCommentList dbAdapter="appserv" table="cloud_locus_comments" method="insert">
+        <data>
+            <locus_id>401</locus_id>
+        </data>
+    </testGetCommentList>
+    <!-- method testGetCommentList end-->
+
+</init>

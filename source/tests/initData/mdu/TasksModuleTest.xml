@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetCats begin-->
+    <testGetCats dbAdapter="appserv" table="cloud_task_cats" method="truncate">
+        <data></data>
+    </testGetCats>
+    <testGetCats dbAdapter="appserv" table="cloud_task_cats" method="insert">
+        <data>
+            <tc_name>"系统"</tc_name>
+        </data>
+    </testGetCats>
+    <testGetCats dbAdapter="appserv" table="cloud_task_cats" method="insert">
+        <data>
+            <tc_name>"健康"</tc_name>
+        </data>
+    </testGetCats>
+    <testGetCats dbAdapter="appserv" table="cloud_task_cats" method="insert">
+        <data>
+            <tc_name>"情亲"</tc_name>
+        </data>
+    </testGetCats>
+    <!-- method testGetCats end-->
+
+    <!-- method testGetTasksList begin-->
+    <testGetTasksList dbAdapter="appserv" table="cloud_tasks" method="truncate">
+        <data></data>
+    </testGetTasksList>
+    <testGetTasksList dbAdapter="appserv" table="cloud_user_tasks" method="truncate">
+        <data></data>
+    </testGetTasksList>
+    <testGetTasksList dbAdapter="appserv" table="cloud_tasks" method="insert">
+        <data>
+            <t_id>1</t_id>
+            <tc_id>1</tc_id>
+            <t_name>"设置个人资料(昵称、头像)"</t_name>
+            <t_type>1</t_type>
+            <t_status>1</t_status>
+            <t_reward>10</t_reward>
+            <t_condition>""</t_condition>
+        </data>
+    </testGetTasksList>
+    <testGetTasksList dbAdapter="appserv" table="cloud_tasks" method="insert">
+        <data>
+            <t_id>2</t_id>
+            <tc_id>2</tc_id>
+            <t_name>"首次设置宝贝步行目标"</t_name>
+            <t_type>1</t_type>
+            <t_status>1</t_status>
+            <t_reward>5</t_reward>
+        </data>
+    </testGetTasksList>
+    <testGetTasksList dbAdapter="appserv" table="cloud_user_tasks" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <t_id>1</t_id>
+            <tc_id>1</tc_id>
+            <t_name>"设置个人资料(昵称、头像)"</t_name>
+            <ut_status>1</ut_status>
+            <ut_progress>0</ut_progress>
+            <t_reward>10</t_reward>
+        </data>
+    </testGetTasksList>
+    <testGetTasksList dbAdapter="appserv" table="cloud_user_tasks" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <t_id>2</t_id>
+            <tc_id>2</tc_id>
+            <t_name>"首次设置宝贝步行目标"</t_name>
+            <ut_status>3</ut_status>
+            <ut_progress>1</ut_progress>
+            <t_reward>5</t_reward>
+        </data>
+    </testGetTasksList>
+    <!-- method testGetTasksList end-->
+
+    <!-- method testAddTask begin-->
+    <!-- <testAddTask dbAdapter="appserv" table="cloud_user_tasks" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <t_id>2</t_id>
+            <tc_id>2</tc_id>
+            <t_name>"第一次设置围栏"</t_name>
+            <ut_status>3</ut_status>
+            <ut_progress>1</ut_progress>
+            <t_reward>5</t_reward>
+        </data>
+    </testAddTask> -->
+    <!-- method testAddTask end-->
+</init>

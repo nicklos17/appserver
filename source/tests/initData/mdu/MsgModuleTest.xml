@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetMsgList begin-->
+    <testGetMsgList dbAdapter="appserv" table="cloud_msgs" method="delete">
+        <data>
+            <where>`baby_id` = 200</where>
+        </data>
+    </testGetMsgList>
+    <testGetMsgList dbAdapter="appserv" table="cloud_msgs" method="insert">
+        <data>
+            <msg_type>11</msg_type>
+            <baby_id>200</baby_id>
+        </data>
+    </testGetMsgList>
+    <!-- method testGetMsgList end-->
+</init>

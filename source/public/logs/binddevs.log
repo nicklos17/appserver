@@ -1,0 +1,7 @@
+2015-07-10 11:28:40>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"E0566DFD42CB67552F852E91F80D79C2","accessToken":"26F1FA8E6FDFAFE5AA5534C7EBD48BCF"}
+2015-07-10 11:29:11>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"E0566DFD42CB67552F852E91F80D79C2","accessToken":"26F1FA8E6FDFAFE5AA5534C7EBD48BCF"}
+2015-07-10 11:32:11>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"E0566DFD42CB67552F852E91F80D79C2","accessToken":"26F1FA8E6FDFAFE5AA5534C7EBD48BCF","reason":"TSocket: Could not connect to 118.192.91.15:6014 (Connection refused [111])"}
+2015-07-10 11:34:38>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"E0566DFD42CB67552F852E91F80D79C2","accessToken":"26F1FA8E6FDFAFE5AA5534C7EBD48BCF","reason":"TSocket: Could not connect to 118.192.91.15:6014 (Connection refused [111])"}
+2015-07-10 11:34:43>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"","accessToken":null,"reason":"TSocket: Could not connect to 118.192.91.15:6014 (Connection refused [111])"}
+2015-07-10 11:36:11>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"E0566DFD42CB67552F852E91F80D79C2","accessToken":"26F1FA8E6FDFAFE5AA5534C7EBD48BCF","reason":"TSocket: Could not connect to 118.192.91.15:6014 (Connection refused [111])"}
+2015-07-10 11:36:20>>>{"action":"bind","sn":["1121407080329","1121407080026"],"qqUid":"","reason":"TSocket: Could not connect to 118.192.91.15:6014 (Connection refused [111])"}

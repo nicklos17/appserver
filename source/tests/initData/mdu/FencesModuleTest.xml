@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testEditFences begin-->
+    <testEditFences dbAdapter="appserv" table="cloud_fences" method="delete">
+        <data>
+            <where>`fence_id` = 400</where>
+        </data>
+    </testEditFences>
+    <testEditFences dbAdapter="appserv" table="cloud_fences" method="insert">
+        <data>
+            <fence_id>400</fence_id>
+        </data>
+    </testEditFences>
+    <!-- method testEditFences end-->
+
+    <!-- method testShowFenList begin-->
+    <testShowFenList dbAdapter="appserv" table="cloud_fences" method="delete">
+        <data>
+            <where>`baby_id` = 201</where>
+        </data>
+    </testShowFenList>
+    <testShowFenList dbAdapter="appserv" table="cloud_fences" method="insert">
+        <data>
+            <baby_id>201</baby_id>
+        </data>
+    </testShowFenList>
+    <!-- method testShowFenList end-->
+</init>

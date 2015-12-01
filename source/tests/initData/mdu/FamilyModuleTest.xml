@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testCheckRelation begin-->
+    <testCheckRelation dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 100 OR `baby_id` = 200</where>
+        </data>
+    </testCheckRelation>
+    <testCheckRelation dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <baby_id>200</baby_id>
+        </data>
+    </testCheckRelation>
+    <!-- method testCheckRelation end-->
+
+    <!-- method testDelBaby begin-->
+    <testDelBaby dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`baby_id` = 201</where>
+        </data>
+    </testDelBaby>
+    <testDelBaby dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <baby_id>201</baby_id>
+        </data>
+    </testDelBaby>
+    <!-- method testDelBaby end-->
+
+    <!-- method testCancelRel begin-->
+    <testCancelRel dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`baby_id` = 202 OR `u_id` = 102</where>
+        </data>
+    </testCancelRel>
+    <testCancelRel dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>102</u_id>
+            <baby_id>202</baby_id>
+        </data>
+    </testCancelRel>
+    <!-- method testCancelRel end-->
+
+    <!-- method testGetUserInfoByMobi begin-->
+    <testGetUserInfoByMobi dbAdapter="ucenter" table="cloud_users" method="delete">
+        <data>
+            <where>`u_mobi` = "15280222222"</where>
+        </data>
+    </testGetUserInfoByMobi>
+    <testGetUserInfoByMobi dbAdapter="ucenter" table="cloud_users" method="insert">
+        <data>
+            <u_mobi>15280222222</u_mobi>
+        </data>
+    </testGetUserInfoByMobi>
+    <!-- method testGetUserInfoByMobi end-->
+
+    <!-- method testUserInfoByIds begin-->
+    <testUserInfoByIds dbAdapter="ucenter" table="cloud_users" method="delete">
+        <data>
+            <where>`u_id` in (100, 101)</where>
+        </data>
+    </testUserInfoByIds>
+    <testUserInfoByIds dbAdapter="ucenter" table="cloud_users" method="insert">
+        <data>
+            <u_id>100</u_id>
+        </data>
+    </testUserInfoByIds>
+    <testUserInfoByIds dbAdapter="ucenter" table="cloud_users" method="insert">
+        <data>
+            <u_id>101</u_id>
+        </data>
+    </testUserInfoByIds>
+    <!-- method testGetUserInfoByMobi end-->
+
+    <!-- method testIssetHost begin-->
+    <testIssetHost dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`baby_id` in (203, 204)</where>
+        </data>
+    </testIssetHost>
+    <testIssetHost dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <baby_id>204</baby_id>
+            <family_relation>5</family_relation>
+            <family_status>1</family_status>
+        </data>
+    </testIssetHost>
+    <!-- method testGetUserInfoByMobi end-->
+
+    <!-- method testShowFamList begin-->
+    <testShowFamList dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`baby_id` = 206</where>
+        </data>
+    </testShowFamList>
+    <testShowFamList dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <baby_id>206</baby_id>
+        </data>
+    </testShowFamList>
+    <testShowFamList dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <baby_id>206</baby_id>
+        </data>
+    </testShowFamList>
+    <!-- method testShowFamList end-->
+</init>

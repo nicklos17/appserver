@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetLocusList begin-->
+    <testGetLocusList dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`baby_id` = 200</where>
+        </data>
+    </testGetLocusList>
+    <testGetLocusList dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>200</baby_id>
+        </data>
+    </testGetLocusList>
+    <!-- method testLocateInfo end-->
+
+    <!-- method testGetCalList begin-->
+    <testGetCalList dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`baby_id` = 201</where>
+        </data>
+    </testGetCalList>
+    <testGetCalList dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>201</baby_id>
+            <locus_date>1433088010</locus_date>
+        </data>
+    </testGetCalList>
+    <!-- method testLocateInfo end-->
+
+    <!-- method testMark begin-->
+    <testMark dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`locus_id` in (302, 303)</where>
+        </data>
+    </testMark>
+    <testMark dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 102</where>
+        </data>
+    </testMark>
+    <testMark dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>202</baby_id>
+            <locus_id>302</locus_id>
+        </data>
+    </testMark>
+    <testMark dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>102</u_id>
+            <baby_id>202</baby_id>
+        </data>
+    </testMark>
+    <!-- method testMark end-->
+
+    <!-- method testGetNewInfo begin-->
+    <testGetNewInfo dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`locus_id` in (304, 305)</where>
+        </data>
+    </testGetNewInfo>
+    <testGetNewInfo dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 104</where>
+        </data>
+    </testGetNewInfo>
+    <testGetNewInfo dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>204</baby_id>
+            <locus_id>304</locus_id>
+        </data>
+    </testGetNewInfo>
+    <testGetNewInfo dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>104</u_id>
+            <baby_id>204</baby_id>
+        </data>
+    </testGetNewInfo>
+    <!-- method testGetNewInfo end-->
+
+    <!-- method testGetBabyId begin-->
+    <testGetBabyId dbAdapter="appserv" table="cloud_locus" method="delete">
+        <data>
+            <where>`locus_id` = 306 OR `baby_id` = 206</where>
+        </data>
+    </testGetBabyId>
+    <testGetBabyId dbAdapter="appserv" table="cloud_locus" method="insert">
+        <data>
+            <baby_id>206</baby_id>
+            <locus_id>306</locus_id>
+        </data>
+    </testGetBabyId>
+    <!-- method testGetNewInfo end-->
+</init>

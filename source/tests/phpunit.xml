@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./TestHelper.php"
+     backupGlobals="false"
+     backupStaticAttributes="false"
+     verbose="true"
+     colors="false"
+     convertErrorsToExceptions="true"
+     convertNoticesToExceptions="true"
+     convertWarningsToExceptions="true"
+     processIsolation="false"
+     stopOnFailure="false"
+     syntaxCheck="true">
+    <testsuite name="apps - environment">
+        <directory>./appsTest/env</directory>
+    </testsuite>
+    <testsuite name="apps - mdu">
+        <directory>./appsTest/mdu</directory>
+    </testsuite>
+    <!-- <testsuite name="apps - v0.1">
+        <directory>./appsTest/v0.1</directory>
+    </testsuite>
+    <testsuite name="apps - v0.2">
+        <directory>./appsTest/v0.2</directory>
+    </testsuite> -->
+</phpunit>

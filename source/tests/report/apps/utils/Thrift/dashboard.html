@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /srv/www/mywork/cloud-phalcon-appserver/source/apps/utils/Thrift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/nv.d3.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../../js/html5shiv.min.js"></script>
+  <script src="../../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../../index.html">/srv/www/mywork/cloud-phalcon-appserver/source</a></li>
+        <li><a href="../../index.html">apps</a></li>
+        <li><a href="../index.html">utils</a></li>
+        <li><a href="index.html">Thrift</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Protocol/TProtocol.php.html#31">TProtocol</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#34">TBinaryProtocol</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#35">TBufferedTransport</a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#35">TSocket</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="StringFunc/Core.php.html#26">Core</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#28">ThriftClassLoader</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Factory/TStringFuncFactory.php.html#27">TStringFuncFactory</a></td><td class="text-right">77%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Protocol/TProtocol.php.html#31">TProtocol</a></td><td class="text-right">5592</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#34">TBinaryProtocol</a></td><td class="text-right">892</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#35">TSocket</a></td><td class="text-right">94</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#35">TBufferedTransport</a></td><td class="text-right">76</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#28">ThriftClassLoader</a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="Factory/TStringFuncFactory.php.html#27">TStringFuncFactory</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="StringFunc/Core.php.html#26">Core</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#314"><abbr title="TBinaryProtocol::readI64">readI64</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#380"><abbr title="TBinaryProtocol::readDouble">readDouble</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TProtocol.php.html#182"><abbr title="TProtocol::skip">skip</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#280"><abbr title="TBinaryProtocol::readBool">readBool</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#118"><abbr title="ThriftClassLoader::findFileInApc">findFileInApc</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#266"><abbr title="TBinaryProtocol::readListEnd">readListEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#270"><abbr title="TBinaryProtocol::readSetBegin">readSetBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TProtocol.php.html#252"><abbr title="TProtocol::skipBinary">skipBinary</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#81"><abbr title="TBufferedTransport::isOpen">isOpen</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#177"><abbr title="TSocket::getHost">getHost</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#186"><abbr title="TSocket::getPort">getPort</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#168"><abbr title="TSocket::setDebug">setDebug</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#137"><abbr title="TSocket::setHandle">setHandle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#93"><abbr title="TBufferedTransport::putBack">putBack</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#128"><abbr title="TBufferedTransport::read">read</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#260"><abbr title="TBinaryProtocol::readListBegin">readListBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#276"><abbr title="TBinaryProtocol::readSetEnd">readSetEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#256"><abbr title="TBinaryProtocol::readMapEnd">readMapEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#111"><abbr title="TBinaryProtocol::writeSetBegin">writeSetBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#101"><abbr title="TBinaryProtocol::writeListBegin">writeListBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#97"><abbr title="TBinaryProtocol::writeMapEnd">writeMapEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#90"><abbr title="TBinaryProtocol::writeMapBegin">writeMapBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#117"><abbr title="TBinaryProtocol::writeSetEnd">writeSetEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#107"><abbr title="TBinaryProtocol::writeListEnd">writeListEnd</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#181"><abbr title="TBinaryProtocol::writeDouble">writeDouble</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#249"><abbr title="TBinaryProtocol::readMapBegin">readMapBegin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#145"><abbr title="TBinaryProtocol::writeI64">writeI64</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#121"><abbr title="TBinaryProtocol::writeBool">writeBool</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#110"><abbr title="TBufferedTransport::readAll">readAll</a></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#144"><abbr title="TBufferedTransport::write">write</a></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#202"><abbr title="TSocket::open">open</a></a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#258"><abbr title="TSocket::read">read</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Factory/TStringFuncFactory.php.html#44"><abbr title="TStringFuncFactory::_setInstance">_setInstance</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#196"><abbr title="TBinaryProtocol::readMessageBegin">readMessageBegin</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#48"><abbr title="TBinaryProtocol::writeMessageBegin">writeMessageBegin</a></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#287"><abbr title="TSocket::write">write</a></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="StringFunc/Core.php.html#27"><abbr title="Core::substr">substr</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#294"><abbr title="TBinaryProtocol::readI16">readI16</a></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#132"><abbr title="ThriftClassLoader::findFile">findFile</a></a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#387"><abbr title="TBinaryProtocol::readString">readString</a></a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Protocol/TProtocol.php.html#252"><abbr title="TProtocol::skipBinary">skipBinary</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Protocol/TProtocol.php.html#182"><abbr title="TProtocol::skip">skip</abbr></a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#314"><abbr title="TBinaryProtocol::readI64">readI64</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#145"><abbr title="TBinaryProtocol::writeI64">writeI64</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#132"><abbr title="ThriftClassLoader::findFile">findFile</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#202"><abbr title="TSocket::open">open</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#110"><abbr title="TBufferedTransport::readAll">readAll</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#128"><abbr title="TBufferedTransport::read">read</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#258"><abbr title="TSocket::read">read</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Transport/TSocket.php.html#287"><abbr title="TSocket::write">write</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#93"><abbr title="TBufferedTransport::putBack">putBack</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ClassLoader/ThriftClassLoader.php.html#118"><abbr title="ThriftClassLoader::findFileInApc">findFileInApc</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#121"><abbr title="TBinaryProtocol::writeBool">writeBool</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#196"><abbr title="TBinaryProtocol::readMessageBegin">readMessageBegin</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Transport/TBufferedTransport.php.html#144"><abbr title="TBufferedTransport::write">write</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Factory/TStringFuncFactory.php.html#44"><abbr title="TStringFuncFactory::_setInstance">_setInstance</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#48"><abbr title="TBinaryProtocol::writeMessageBegin">writeMessageBegin</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="StringFunc/Core.php.html#27"><abbr title="Core::substr">substr</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#294"><abbr title="TBinaryProtocol::readI16">readI16</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Protocol/TBinaryProtocol.php.html#387"><abbr title="TBinaryProtocol::readString">readString</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.15</a> using <a href="http://php.net/" target="_top">PHP 5.5.23</a> and <a href="http://phpunit.de/">PHPUnit 4.5.1</a> at Mon Jul 13 15:03:44 CST 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../../js/holder.js" type="text/javascript"></script>
+  <script src="../../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,1,0,0,0,2,1,0,3,0,0,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([28,0,0,0,1,2,1,5,2,1,0,83], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[76.056338028169,24,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#28\">ThriftClassLoader<\/a>"],[77.777777777778,4,"<a href=\"Factory\/TStringFuncFactory.php.html#27\">TStringFuncFactory<\/a>"],[40,62,"<a href=\"Protocol\/TBinaryProtocol.php.html#34\">TBinaryProtocol<\/a>"],[2.3809523809524,77,"<a href=\"Protocol\/TProtocol.php.html#31\">TProtocol<\/a>"],[75,3,"<a href=\"StringFunc\/Core.php.html#26\">Core<\/a>"],[43.396226415094,18,"<a href=\"Transport\/TBufferedTransport.php.html#35\">TBufferedTransport<\/a>"],[59.52380952381,31,"<a href=\"Transport\/TSocket.php.html#35\">TSocket<\/a>"],[100,8,"<a href=\"Transport\/TTransport.php.html#32\">TTransport<\/a>"],[100,0,"<a href=\"Type\/TMessageType.php.html#28\">TMessageType<\/a>"],[100,0,"<a href=\"Type\/TType.php.html#28\">TType<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#59\">ThriftClassLoader::__construct<\/a>"],[100,1,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#71\">ThriftClassLoader::registerNamespace<\/a>"],[100,1,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#82\">ThriftClassLoader::registerDefinition<\/a>"],[100,1,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#92\">ThriftClassLoader::register<\/a>"],[100,4,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#102\">ThriftClassLoader::loadClass<\/a>"],[0,2,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#118\">ThriftClassLoader::findFileInApc<\/a>"],[74.509803921569,14,"<a href=\"ClassLoader\/ThriftClassLoader.php.html#132\">ThriftClassLoader::findFile<\/a>"],[100,2,"<a href=\"Factory\/TStringFuncFactory.php.html#36\">TStringFuncFactory::create<\/a>"],[60,2,"<a href=\"Factory\/TStringFuncFactory.php.html#44\">TStringFuncFactory::_setInstance<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#42\">TBinaryProtocol::__construct<\/a>"],[62.5,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#48\">TBinaryProtocol::writeMessageBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#63\">TBinaryProtocol::writeMessageEnd<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#67\">TBinaryProtocol::writeStructBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#71\">TBinaryProtocol::writeStructEnd<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#75\">TBinaryProtocol::writeFieldBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#81\">TBinaryProtocol::writeFieldEnd<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#85\">TBinaryProtocol::writeFieldStop<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#90\">TBinaryProtocol::writeMapBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#97\">TBinaryProtocol::writeMapEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#101\">TBinaryProtocol::writeListBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#107\">TBinaryProtocol::writeListEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#111\">TBinaryProtocol::writeSetBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#117\">TBinaryProtocol::writeSetEnd<\/a>"],[0,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#121\">TBinaryProtocol::writeBool<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#127\">TBinaryProtocol::writeByte<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#133\">TBinaryProtocol::writeI16<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#139\">TBinaryProtocol::writeI32<\/a>"],[0,5,"<a href=\"Protocol\/TBinaryProtocol.php.html#145\">TBinaryProtocol::writeI64<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#181\">TBinaryProtocol::writeDouble<\/a>"],[100,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#187\">TBinaryProtocol::writeString<\/a>"],[60,4,"<a href=\"Protocol\/TBinaryProtocol.php.html#196\">TBinaryProtocol::readMessageBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#222\">TBinaryProtocol::readMessageEnd<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#226\">TBinaryProtocol::readStructBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#231\">TBinaryProtocol::readStructEnd<\/a>"],[100,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#235\">TBinaryProtocol::readFieldBegin<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#245\">TBinaryProtocol::readFieldEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#249\">TBinaryProtocol::readMapBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#256\">TBinaryProtocol::readMapEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#260\">TBinaryProtocol::readListBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#266\">TBinaryProtocol::readListEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#270\">TBinaryProtocol::readSetBegin<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#276\">TBinaryProtocol::readSetEnd<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#280\">TBinaryProtocol::readBool<\/a>"],[100,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#287\">TBinaryProtocol::readByte<\/a>"],[71.428571428571,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#294\">TBinaryProtocol::readI16<\/a>"],[100,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#304\">TBinaryProtocol::readI32<\/a>"],[0,9,"<a href=\"Protocol\/TBinaryProtocol.php.html#314\">TBinaryProtocol::readI64<\/a>"],[0,1,"<a href=\"Protocol\/TBinaryProtocol.php.html#380\">TBinaryProtocol::readDouble<\/a>"],[83.333333333333,2,"<a href=\"Protocol\/TBinaryProtocol.php.html#387\">TBinaryProtocol::readString<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#43\">TProtocol::__construct<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#52\">TProtocol::getTransport<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#63\">TProtocol::writeMessageBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#68\">TProtocol::writeMessageEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#77\">TProtocol::writeStructBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#85\">TProtocol::writeStructEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#96\">TProtocol::writeFieldBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#98\">TProtocol::writeFieldEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#100\">TProtocol::writeFieldStop<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#102\">TProtocol::writeMapBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#104\">TProtocol::writeMapEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#106\">TProtocol::writeListBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#108\">TProtocol::writeListEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#110\">TProtocol::writeSetBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#112\">TProtocol::writeSetEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#114\">TProtocol::writeBool<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#116\">TProtocol::writeByte<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#118\">TProtocol::writeI16<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#120\">TProtocol::writeI32<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#122\">TProtocol::writeI64<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#124\">TProtocol::writeDouble<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#126\">TProtocol::writeString<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#135\">TProtocol::readMessageBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#140\">TProtocol::readMessageEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#142\">TProtocol::readStructBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#144\">TProtocol::readStructEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#146\">TProtocol::readFieldBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#148\">TProtocol::readFieldEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#150\">TProtocol::readMapBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#152\">TProtocol::readMapEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#154\">TProtocol::readListBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#156\">TProtocol::readListEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#158\">TProtocol::readSetBegin<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#160\">TProtocol::readSetEnd<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#162\">TProtocol::readBool<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#164\">TProtocol::readByte<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#166\">TProtocol::readI16<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#168\">TProtocol::readI32<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#170\">TProtocol::readI64<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#172\">TProtocol::readDouble<\/a>"],[100,1,"<a href=\"Protocol\/TProtocol.php.html#174\">TProtocol::readString<\/a>"],[0,17,"<a href=\"Protocol\/TProtocol.php.html#182\">TProtocol::skip<\/a>"],[0,19,"<a href=\"Protocol\/TProtocol.php.html#252\">TProtocol::skipBinary<\/a>"],[66.666666666667,2,"<a href=\"StringFunc\/Core.php.html#27\">Core::substr<\/a>"],[100,1,"<a href=\"StringFunc\/Core.php.html#35\">Core::strlen<\/a>"],[100,1,"<a href=\"Transport\/TBufferedTransport.php.html#40\">TBufferedTransport::__construct<\/a>"],[0,1,"<a href=\"Transport\/TBufferedTransport.php.html#81\">TBufferedTransport::isOpen<\/a>"],[100,1,"<a href=\"Transport\/TBufferedTransport.php.html#85\">TBufferedTransport::open<\/a>"],[100,1,"<a href=\"Transport\/TBufferedTransport.php.html#89\">TBufferedTransport::close<\/a>"],[0,2,"<a href=\"Transport\/TBufferedTransport.php.html#93\">TBufferedTransport::putBack<\/a>"],[33.333333333333,5,"<a href=\"Transport\/TBufferedTransport.php.html#110\">TBufferedTransport::readAll<\/a>"],[0,3,"<a href=\"Transport\/TBufferedTransport.php.html#128\">TBufferedTransport::read<\/a>"],[42.857142857143,2,"<a href=\"Transport\/TBufferedTransport.php.html#144\">TBufferedTransport::write<\/a>"],[100,2,"<a href=\"Transport\/TBufferedTransport.php.html#157\">TBufferedTransport::flush<\/a>"],[100,2,"<a href=\"Transport\/TSocket.php.html#123\">TSocket::__construct<\/a>"],[0,1,"<a href=\"Transport\/TSocket.php.html#137\">TSocket::setHandle<\/a>"],[100,1,"<a href=\"Transport\/TSocket.php.html#146\">TSocket::setSendTimeout<\/a>"],[100,1,"<a href=\"Transport\/TSocket.php.html#157\">TSocket::setRecvTimeout<\/a>"],[0,1,"<a href=\"Transport\/TSocket.php.html#168\">TSocket::setDebug<\/a>"],[0,1,"<a href=\"Transport\/TSocket.php.html#177\">TSocket::getHost<\/a>"],[0,1,"<a href=\"Transport\/TSocket.php.html#186\">TSocket::getPort<\/a>"],[100,1,"<a href=\"Transport\/TSocket.php.html#195\">TSocket::isOpen<\/a>"],[44,7,"<a href=\"Transport\/TSocket.php.html#202\">TSocket::open<\/a>"],[100,2,"<a href=\"Transport\/TSocket.php.html#242\">TSocket::close<\/a>"],[50,6,"<a href=\"Transport\/TSocket.php.html#258\">TSocket::read<\/a>"],[64.705882352941,6,"<a href=\"Transport\/TSocket.php.html#287\">TSocket::write<\/a>"],[100,1,"<a href=\"Transport\/TSocket.php.html#323\">TSocket::flush<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#39\">TTransport::isOpen<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#46\">TTransport::open<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#51\">TTransport::close<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#60\">TTransport::read<\/a>"],[100,2,"<a href=\"Transport\/TTransport.php.html#68\">TTransport::readAll<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#85\">TTransport::write<\/a>"],[100,1,"<a href=\"Transport\/TTransport.php.html#92\">TTransport::flush<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

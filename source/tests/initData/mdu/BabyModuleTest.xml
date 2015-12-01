@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetListByUidDev begin-->
+    <testGetListByUidDev dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 1001</where>
+        </data>
+    </testGetListByUidDev>
+    <testGetListByUidDev dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` = 2000</where>
+        </data>
+    </testGetListByUidDev>
+    <testGetListByUidDev dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 1000 OR `baby_id` = 2000</where>
+        </data>
+    </testGetListByUidDev>
+    <testGetListByUidDev dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>1000</u_id>
+            <baby_id>2000</baby_id>
+        </data>
+    </testGetListByUidDev>
+    <testGetListByUidDev dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>2000</baby_id>
+            <baby_devs>1</baby_devs>
+        </data>
+    </testGetListByUidDev>
+    <!-- method testGetListByUidDev end-->
+
+    <!-- method testGetListByUid begin-->
+    <testGetListByUid dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` IN (SELECT `baby_id` FROM `cloud_family` WHERE `u_id` = 1003)</where>
+        </data>
+    </testGetListByUid>
+    <testGetListByUid dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` IN (SELECT `baby_id` FROM `cloud_family` WHERE `u_id` = 1004)</where>
+        </data>
+    </testGetListByUid>
+    <testGetListByUid dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 1003</where>
+        </data>
+    </testGetListByUid>
+    <testGetListByUid dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` = 1004</where>
+        </data>
+    </testGetListByUid>
+    <testGetListByUid dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>1003</u_id>
+        </data>
+    </testGetListByUid>
+    <!-- method testGetListByUid end-->
+
+    <!-- method testGetExpireDevs begin-->
+    <testGetExpireDevs dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`baby_id` = 1005 OR `dev_id` = 100</where>
+        </data>
+    </testGetExpireDevs>
+    <testGetExpireDevs dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <baby_id>1005</baby_id>
+            <dev_id>100</dev_id>
+            <dev_expires>0</dev_expires>
+        </data>
+    </testGetExpireDevs>
+    <!-- method testGetExpireDevs end-->
+
+    <!-- method testBabyIdGetShoeId begin-->
+    <testBabyIdGetShoeId dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`baby_id` = 1006</where>
+        </data>
+    </testBabyIdGetShoeId>
+    <testBabyIdGetShoeId dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <baby_id>1007</baby_id>
+        </data>
+    </testBabyIdGetShoeId>
+    <!-- method testBabyIdGetShoeId end-->
+
+    <!-- method testGetBabyName begin-->
+    <testGetBabyName dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` = 1008</where>
+        </data>
+    </testGetBabyName>
+    <testGetBabyName dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>1008</baby_id>
+            <baby_nick>"云朵baby"</baby_nick>
+        </data>
+    </testGetBabyName>
+    <!-- method testGetBabyName end-->
+</init>

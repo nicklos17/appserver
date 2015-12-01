@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /srv/www/mywork/cloud-phalcon-appserver/source/apps/mdu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/srv/www/mywork/cloud-phalcon-appserver/source</a></li>
+        <li><a href="../index.html">apps</a></li>
+        <li><a href="index.html">mdu</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="PraisesModule.php.html#10">PraisesModule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#5">BabyStepsModel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RenewModule.php.html#7">RenewModule</a></td><td class="text-right">1%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#5">Praisesmodel</a></td><td class="text-right">6%</td></tr>
+       <tr><td><a href="UnionModule.php.html#9">UnionModule</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="ModuleBase.php.html#9">ModuleBase</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#5">RenewModel</a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="VerModule.php.html#7">VerModule</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="LocateModule.php.html#8">LocateModule</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#5">DevtagsModel</a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#5">BabyRanksModel</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="models/MsgModel.php.html#5">MsgModel</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#5">UsertasksModel</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="CommentsModule.php.html#8">CommentsModule</a></td><td class="text-right">27%</td></tr>
+       <tr><td><a href="RankModule.php.html#7">RankModule</a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#5">Locusinfomodel</a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="BabyModule.php.html#7">BabyModule</a></td><td class="text-right">37%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#5">DevicesModule</a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="MsgModule.php.html#5">MsgModule</a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#5">CommentsModel</a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#8">FamilyModule</a></td><td class="text-right">48%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#5">DevicesModel</a></td><td class="text-right">49%</td></tr>
+       <tr><td><a href="LocusModule.php.html#7">LocusModule</a></td><td class="text-right">51%</td></tr>
+       <tr><td><a href="TasksModule.php.html#7">TasksModule</a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#5">LocusModel</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="FencesModule.php.html#5">FencesModule</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="CaptchaModule.php.html#8">CaptchaModule</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#5">FamilyModel</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#5">BabyModel</a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="models/TasksModel.php.html#5">TasksModel</a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="models/FencesModel.php.html#5">FencesModel</a></td><td class="text-right">79%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="PraisesModule.php.html#10">PraisesModule</a></td><td class="text-right">1406</td></tr>
+       <tr><td><a href="RankModule.php.html#7">RankModule</a></td><td class="text-right">819</td></tr>
+       <tr><td><a href="CommentsModule.php.html#8">CommentsModule</a></td><td class="text-right">503</td></tr>
+       <tr><td><a href="LocateModule.php.html#8">LocateModule</a></td><td class="text-right">481</td></tr>
+       <tr><td><a href="DevicesModule.php.html#5">DevicesModule</a></td><td class="text-right">353</td></tr>
+       <tr><td><a href="RenewModule.php.html#7">RenewModule</a></td><td class="text-right">328</td></tr>
+       <tr><td><a href="VerModule.php.html#7">VerModule</a></td><td class="text-right">302</td></tr>
+       <tr><td><a href="ModuleBase.php.html#9">ModuleBase</a></td><td class="text-right">270</td></tr>
+       <tr><td><a href="UnionModule.php.html#9">UnionModule</a></td><td class="text-right">242</td></tr>
+       <tr><td><a href="TasksModule.php.html#7">TasksModule</a></td><td class="text-right">206</td></tr>
+       <tr><td><a href="BabyModule.php.html#7">BabyModule</a></td><td class="text-right">177</td></tr>
+       <tr><td><a href="LocusModule.php.html#7">LocusModule</a></td><td class="text-right">152</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#5">DevtagsModel</a></td><td class="text-right">125</td></tr>
+       <tr><td><a href="CaptchaModule.php.html#8">CaptchaModule</a></td><td class="text-right">103</td></tr>
+       <tr><td><a href="FamilyModule.php.html#8">FamilyModule</a></td><td class="text-right">73</td></tr>
+       <tr><td><a href="MsgModule.php.html#5">MsgModule</a></td><td class="text-right">32</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#5">RenewModel</a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#5">BabyModel</a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#5">CommentsModel</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="FencesModule.php.html#5">FencesModule</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="models/DevtagsModel.php.html#86"><abbr title="DevtagsModel::getPushInfoForIOS">getPushInfoForIOS</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#96"><abbr title="DevtagsModel::getIOSToken">getIOSToken</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#106"><abbr title="DevtagsModel::getANDToken">getANDToken</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#72"><abbr title="DevtagsModel::getPushInfo">getPushInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#58"><abbr title="DevtagsModel::del">del</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#12"><abbr title="DevtagsModel::checkToken">checkToken</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#29"><abbr title="DevtagsModel::addToken">addToken</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#45"><abbr title="DevtagsModel::updateToken">updateToken</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#152"><abbr title="DevtagsModel::getUserByUid">getUserByUid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#167"><abbr title="DevtagsModel::getUserHaveCver">getUserHaveCver</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#234"><abbr title="FamilyModel::getAuthUids">getAuthUids</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#246"><abbr title="FamilyModel::getAuthBaby">getAuthBaby</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#259"><abbr title="FamilyModel::getAuthor">getAuthor</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#198"><abbr title="FamilyModel::incCommentNum">incCommentNum</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#180"><abbr title="FamilyModel::cancelPraises">cancelPraises</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#182"><abbr title="DevtagsModel::getUserNoCver">getUserNoCver</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#107"><abbr title="FamilyModel::setGuardian">setGuardian</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#161"><abbr title="FamilyModel::hit">hit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#418"><abbr title="DevicesModel::getDevInfoByUuids">getDevInfoByUuids</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#407"><abbr title="DevicesModel::getUUidByBidUid">getUUidByBidUid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#47"><abbr title="DevicesModel::getShoeIdsByBabyId">getShoeIdsByBabyId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#202"><abbr title="DevicesModel::getBabyDevByShoeId">getBabyDevByShoeId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#219"><abbr title="DevicesModel::setModeByShoeId">setModeByShoeId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#77"><abbr title="CommentsModel::getCommentByLcid">getCommentByLcid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#48"><abbr title="CommentsModel::getCommentBymaxId">getCommentBymaxId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#65"><abbr title="BabyStepsModel::getStepsList">getStepsList</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#85"><abbr title="BabyStepsModel::getStepsListByDate">getStepsListByDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#11"><abbr title="CommentsModel::addComment">addComment</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#252"><abbr title="DevicesModel::deleteShoe">deleteShoe</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#264"><abbr title="DevicesModel::getShoeIdByQr">getShoeIdByQr</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#343"><abbr title="DevicesModel::addShoe">addShoe</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#382"><abbr title="DevicesModel::getBabysBinded">getBabysBinded</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#393"><abbr title="DevicesModel::getNearlyDev">getNearlyDev</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#328"><abbr title="DevicesModel::getDevIdByqr">getDevIdByqr</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#312"><abbr title="DevicesModel::setExpiresByDevid">setExpiresByDevid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#279"><abbr title="DevicesModel::getDevInfoByQr">getDevInfoByQr</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/DevicesModel.php.html#296"><abbr title="DevicesModel::updateExpires">updateExpires</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FamilyModel.php.html#271"><abbr title="FamilyModel::checkRelation">checkRelation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FencesModel.php.html#107"><abbr title="FencesModel::getBabyCheckinByUid">getBabyCheckinByUid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#60"><abbr title="RenewModel::getRenewByRono">getRenewByRono</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#76"><abbr title="RenewModel::addRenewLog">addRenewLog</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#91"><abbr title="RenewModel::setOrderStatus">setOrderStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#28"><abbr title="RenewModel::addOrder">addOrder</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#114"><abbr title="Praisesmodel::getLsidByUid">getLsidByUid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#47"><abbr title="Praisesmodel::getPraiseList">getPraiseList</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#71"><abbr title="Praisesmodel::getPraisesBySinceId">getPraisesBySinceId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#95"><abbr title="Praisesmodel::getPraisesByMaxId">getPraisesByMaxId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/TasksModel.php.html#52"><abbr title="TasksModel::getLastTaskByGroup">getLastTaskByGroup</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/TasksModel.php.html#77"><abbr title="TasksModel::taskCount">taskCount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#140"><abbr title="UsertasksModel::del">del</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#169"><abbr title="UsertasksModel::getUserTasksBySTime">getUserTasksBySTime</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#182"><abbr title="UsertasksModel::getUserTasksByMTime">getUserTasksByMTime</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#120"><abbr title="UsertasksModel::complete">complete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#106"><abbr title="UsertasksModel::getTaskInfo">getTaskInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#23"><abbr title="UsertasksModel::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/UsertasksModel.php.html#52"><abbr title="UsertasksModel::updateProgress">updateProgress</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#32"><abbr title="Praisesmodel::delPraise">delPraise</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/PraisesModel.php.html#16"><abbr title="Praisesmodel::hit">hit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#90"><abbr title="Locusinfomodel::nearlyCoorByLiId">nearlyCoorByLiId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#105"><abbr title="Locusinfomodel::nearlyCoorOfToday">nearlyCoorOfToday</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#13"><abbr title="LocusModel::hit">hit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#78"><abbr title="Locusinfomodel::getUuidByBaby">getUuidByBaby</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#65"><abbr title="Locusinfomodel::nearlyCoor">nearlyCoor</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FencesModel.php.html#119"><abbr title="FencesModel::getBabyCheckin">getBabyCheckin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/FencesModel.php.html#131"><abbr title="FencesModel::exec">exec</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusInfoModel.php.html#54"><abbr title="Locusinfomodel::checkLocus">checkLocus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#26"><abbr title="LocusModel::cancelPraises">cancelPraises</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#40"><abbr title="LocusModel::setCommentNum">setCommentNum</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/MsgModel.php.html#38"><abbr title="MsgModel::getMsgBySinceId">getMsgBySinceId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/MsgModel.php.html#65"><abbr title="MsgModel::getMsgByMaxId">getMsgByMaxId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/MsgModel.php.html#89"><abbr title="MsgModel::insertMsg">insertMsg</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#220"><abbr title="LocusModel::getBabyId">getBabyId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#190"><abbr title="LocusModel::getMark">getMark</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#86"><abbr title="LocusModel::locusBySinceId">locusBySinceId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/LocusModel.php.html#105"><abbr title="LocusModel::locusByMaxId">locusByMaxId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#47"><abbr title="BabyStepsModel::updateBabySteps">updateBabySteps</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#32"><abbr title="BabyStepsModel::addBabySteps">addBabySteps</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocateModule.php.html#115"><abbr title="LocateModule::getNewLocate">getNewLocate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocusModule.php.html#19"><abbr title="LocusModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocateModule.php.html#100"><abbr title="LocateModule::showNearlyLocate">showNearlyLocate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocateModule.php.html#73"><abbr title="LocateModule::showDayLocate">showDayLocate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FencesModule.php.html#14"><abbr title="FencesModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocateModule.php.html#19"><abbr title="LocateModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BabyModule.php.html#22"><abbr title="BabyModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ModuleBase.php.html#59"><abbr title="ModuleBase::_showLoginData">_showLoginData</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PraisesModule.php.html#47"><abbr title="PraisesModule::hit">hit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PraisesModule.php.html#134"><abbr title="PraisesModule::canclePraise">canclePraise</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PraisesModule.php.html#28"><abbr title="PraisesModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MsgModule.php.html#10"><abbr title="MsgModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ModuleBase.php.html#154"><abbr title="ModuleBase::getPushUid">getPushUid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#100"><abbr title="FamilyModule::guardian">guardian</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#63"><abbr title="FamilyModule::getUserInfo">getUserInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CommentsModule.php.html#40"><abbr title="CommentsModule::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#25"><abbr title="DevicesModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CommentsModule.php.html#25"><abbr title="CommentsModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CaptchaModule.php.html#23"><abbr title="CaptchaModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BabyModule.php.html#134"><abbr title="BabyModule::incGuards">incGuards</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BabyModule.php.html#145"><abbr title="BabyModule::setSteps">setSteps</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#160"><abbr title="DevicesModule::updateShoeMode">updateShoeMode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#168"><abbr title="DevicesModule::deleteShoe">deleteShoe</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#205"><abbr title="DevicesModule::addShoe">addShoe</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#255"><abbr title="DevicesModule::babyBinded">babyBinded</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#196"><abbr title="DevicesModule::getDevExpireByqr">getDevExpireByqr</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#191"><abbr title="DevicesModule::getDevInfo">getDevInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#179"><abbr title="DevicesModule::checkDevByQr">checkDevByQr</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PraisesModule.php.html#175"><abbr title="PraisesModule::showPraisesList">showPraisesList</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LocusModule.php.html#167"><abbr title="LocusModule::getMessList">getMessList</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#61"><abbr title="BabyRanksModel::getRankInfo">getRankInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VerModule.php.html#15"><abbr title="VerModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TasksModule.php.html#223"><abbr title="TasksModule::completeTask">completeTask</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#149"><abbr title="BabyModel::setGuardsByBabyId">setGuardsByBabyId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#71"><abbr title="BabyRanksModel::getRank">getRank</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#51"><abbr title="BabyRanksModel::countBaby">countBaby</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TasksModule.php.html#235"><abbr title="TasksModule::delTask">delTask</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#37"><abbr title="BabyRanksModel::getSummary">getSummary</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnionModule.php.html#50"><abbr title="UnionModule::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RankModule.php.html#19"><abbr title="RankModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnionModule.php.html#32"><abbr title="UnionModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TasksModule.php.html#17"><abbr title="TasksModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RenewModule.php.html#121"><abbr title="RenewModule::wechatFailedPay">wechatFailedPay</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RankModule.php.html#167"><abbr title="RankModule::getAllRank">getAllRank</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RenewModule.php.html#17"><abbr title="RenewModule::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#16"><abbr title="BabyModel::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#209"><abbr title="BabyModel::exec">exec</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#133"><abbr title="BabyModel::getBabyInfoById">getBabyInfoById</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyRanksModel.php.html#25"><abbr title="BabyRanksModel::addBabyId">addBabyId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RenewModule.php.html#35"><abbr title="RenewModule::renewUpdate">renewUpdate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/BabyStepsModel.php.html#13"><abbr title="BabyStepsModel::getBsidByBaby">getBsidByBaby</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RenewModule.php.html#55"><abbr title="RenewModule::renewOperate">renewOperate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VerModule.php.html#88"><abbr title="VerModule::getHardInfo">getHardInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BabyModule.php.html#31"><abbr title="BabyModule::addBaby">addBaby</a></a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="LocusModule.php.html#34"><abbr title="LocusModule::getLocusList">getLocusList</a></a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="VerModule.php.html#26"><abbr title="VerModule::getSoftVerInfo">getSoftVerInfo</a></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="TasksModule.php.html#145"><abbr title="TasksModule::getUserTasksList">getUserTasksList</a></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="RankModule.php.html#30"><abbr title="RankModule::getOldRank">getOldRank</a></a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="MsgModule.php.html#15"><abbr title="MsgModule::getMsgList">getMsgList</a></a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="BabyModule.php.html#67"><abbr title="BabyModule::editBaby">editBaby</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#70"><abbr title="DevicesModule::bindBabyShoe">bindBabyShoe</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="CaptchaModule.php.html#42"><abbr title="CaptchaModule::makeCaptcha">makeCaptcha</a></a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="LocateModule.php.html#33"><abbr title="LocateModule::locateInfo">locateInfo</a></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="RankModule.php.html#78"><abbr title="RankModule::getTodayRank">getTodayRank</a></a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#86"><abbr title="FamilyModule::addRel">addRel</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FencesModule.php.html#27"><abbr title="FencesModule::editFences">editFences</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FencesModule.php.html#35"><abbr title="FencesModule::delFences">delFences</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#52"><abbr title="FamilyModule::cancelRel">cancelRel</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FencesModule.php.html#19"><abbr title="FencesModule::addFences">addFences</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FamilyModule.php.html#43"><abbr title="FamilyModule::delBaby">delBaby</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="CommentsModule.php.html#213"><abbr title="CommentsModule::getCommentList">getCommentList</a></a></td><td class="text-right">67%</td></tr>
+       <tr><td><a href="TasksModule.php.html#38"><abbr title="TasksModule::getTasksList">getTasksList</a></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="LocusModule.php.html#116"><abbr title="LocusModule::getCalList">getCalList</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DevicesModule.php.html#102"><abbr title="DevicesModule::unbindBabyShoe">unbindBabyShoe</a></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="CommentsModule.php.html#169"><abbr title="CommentsModule::delComment">delComment</a></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#134"><abbr title="DevtagsModel::setDisturb">setDisturb</a></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="LocusModule.php.html#145"><abbr title="LocusModule::mark">mark</a></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="RankModule.php.html#167"><abbr title="RankModule::getAllRank">getAllRank</abbr></a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="CommentsModule.php.html#40"><abbr title="CommentsModule::add">add</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="PraisesModule.php.html#175"><abbr title="PraisesModule::showPraisesList">showPraisesList</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="LocateModule.php.html#115"><abbr title="LocateModule::getNewLocate">getNewLocate</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="UnionModule.php.html#50"><abbr title="UnionModule::add">add</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="LocusModule.php.html#34"><abbr title="LocusModule::getLocusList">getLocusList</abbr></a></td><td class="text-right">164</td></tr>
+       <tr><td><a href="PraisesModule.php.html#47"><abbr title="PraisesModule::hit">hit</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="TasksModule.php.html#145"><abbr title="TasksModule::getUserTasksList">getUserTasksList</abbr></a></td><td class="text-right">124</td></tr>
+       <tr><td><a href="ModuleBase.php.html#59"><abbr title="ModuleBase::_showLoginData">_showLoginData</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="VerModule.php.html#88"><abbr title="VerModule::getHardInfo">getHardInfo</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="RenewModule.php.html#55"><abbr title="RenewModule::renewOperate">renewOperate</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="DevicesModule.php.html#205"><abbr title="DevicesModule::addShoe">addShoe</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="PraisesModule.php.html#134"><abbr title="PraisesModule::canclePraise">canclePraise</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="RankModule.php.html#78"><abbr title="RankModule::getTodayRank">getTodayRank</abbr></a></td><td class="text-right">52</td></tr>
+       <tr><td><a href="CaptchaModule.php.html#42"><abbr title="CaptchaModule::makeCaptcha">makeCaptcha</abbr></a></td><td class="text-right">50</td></tr>
+       <tr><td><a href="VerModule.php.html#26"><abbr title="VerModule::getSoftVerInfo">getSoftVerInfo</abbr></a></td><td class="text-right">46</td></tr>
+       <tr><td><a href="FamilyModule.php.html#100"><abbr title="FamilyModule::guardian">guardian</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="BabyModule.php.html#31"><abbr title="BabyModule::addBaby">addBaby</abbr></a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="MsgModule.php.html#15"><abbr title="MsgModule::getMsgList">getMsgList</abbr></a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="RenewModule.php.html#121"><abbr title="RenewModule::wechatFailedPay">wechatFailedPay</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="LocateModule.php.html#73"><abbr title="LocateModule::showDayLocate">showDayLocate</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ModuleBase.php.html#154"><abbr title="ModuleBase::getPushUid">getPushUid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="BabyModule.php.html#145"><abbr title="BabyModule::setSteps">setSteps</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="TasksModule.php.html#38"><abbr title="TasksModule::getTasksList">getTasksList</abbr></a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="RenewModule.php.html#35"><abbr title="RenewModule::renewUpdate">renewUpdate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="LocateModule.php.html#33"><abbr title="LocateModule::locateInfo">locateInfo</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="CommentsModule.php.html#213"><abbr title="CommentsModule::getCommentList">getCommentList</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="BabyModule.php.html#67"><abbr title="BabyModule::editBaby">editBaby</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="DevicesModule.php.html#70"><abbr title="DevicesModule::bindBabyShoe">bindBabyShoe</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="CommentsModule.php.html#169"><abbr title="CommentsModule::delComment">delComment</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="RankModule.php.html#30"><abbr title="RankModule::getOldRank">getOldRank</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DevicesModule.php.html#102"><abbr title="DevicesModule::unbindBabyShoe">unbindBabyShoe</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/BabyModel.php.html#16"><abbr title="BabyModel::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="TasksModule.php.html#235"><abbr title="TasksModule::delTask">delTask</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/CommentsModel.php.html#11"><abbr title="CommentsModel::addComment">addComment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/RenewModel.php.html#28"><abbr title="RenewModel::addOrder">addOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LocusModule.php.html#167"><abbr title="LocusModule::getMessList">getMessList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DevicesModule.php.html#168"><abbr title="DevicesModule::deleteShoe">deleteShoe</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DevicesModule.php.html#179"><abbr title="DevicesModule::checkDevByQr">checkDevByQr</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LocateModule.php.html#100"><abbr title="LocateModule::showNearlyLocate">showNearlyLocate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DevicesModule.php.html#160"><abbr title="DevicesModule::updateShoeMode">updateShoeMode</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LocusModule.php.html#145"><abbr title="LocusModule::mark">mark</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="models/DevtagsModel.php.html#134"><abbr title="DevtagsModel::setDisturb">setDisturb</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="FamilyModule.php.html#43"><abbr title="FamilyModule::delBaby">delBaby</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="FamilyModule.php.html#86"><abbr title="FamilyModule::addRel">addRel</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="FencesModule.php.html#35"><abbr title="FencesModule::delFences">delFences</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="FamilyModule.php.html#52"><abbr title="FamilyModule::cancelRel">cancelRel</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="FencesModule.php.html#27"><abbr title="FencesModule::editFences">editFences</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="FencesModule.php.html#19"><abbr title="FencesModule::addFences">addFences</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="LocusModule.php.html#116"><abbr title="LocusModule::getCalList">getCalList</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.15</a> using <a href="http://php.net/" target="_top">PHP 5.5.23</a> and <a href="http://phpunit.de/">PHPUnit 4.5.1</a> at Mon Jul 13 15:03:44 CST 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([2,3,4,5,4,4,6,1,2,0,1,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([130,0,1,1,2,2,5,7,3,3,3,97], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[37.5,25,"<a href=\"BabyModule.php.html#7\">BabyModule<\/a>"],[58.904109589041,32,"<a href=\"CaptchaModule.php.html#8\">CaptchaModule<\/a>"],[27.397260273973,35,"<a href=\"CommentsModule.php.html#8\">CommentsModule<\/a>"],[38.636363636364,37,"<a href=\"DevicesModule.php.html#5\">DevicesModule<\/a>"],[48.717948717949,20,"<a href=\"FamilyModule.php.html#8\">FamilyModule<\/a>"],[58.333333333333,8,"<a href=\"FencesModule.php.html#5\">FencesModule<\/a>"],[16.666666666667,28,"<a href=\"LocateModule.php.html#8\">LocateModule<\/a>"],[51.041666666667,32,"<a href=\"LocusModule.php.html#7\">LocusModule<\/a>"],[14.444444444444,20,"<a href=\"ModuleBase.php.html#9\">ModuleBase<\/a>"],[44,11,"<a href=\"MsgModule.php.html#5\">MsgModule<\/a>"],[96.774193548387,9,"<a href=\"MyselfModule.php.html#9\">MyselfModule<\/a>"],[0,37,"<a href=\"PraisesModule.php.html#10\">PraisesModule<\/a>"],[30.555555555556,48,"<a href=\"RankModule.php.html#7\">RankModule<\/a>"],[1.4285714285714,18,"<a href=\"RenewModule.php.html#7\">RenewModule<\/a>"],[53.846153846154,41,"<a href=\"TasksModule.php.html#7\">TasksModule<\/a>"],[7.9365079365079,17,"<a href=\"UnionModule.php.html#9\">UnionModule<\/a>"],[16.666666666667,22,"<a href=\"VerModule.php.html#7\">VerModule<\/a>"],[65.384615384615,15,"<a href=\"models\/BabyModel.php.html#5\">BabyModel<\/a>"],[25,6,"<a href=\"models\/BabyRanksModel.php.html#5\">BabyRanksModel<\/a>"],[0,5,"<a href=\"models\/BabyStepsModel.php.html#5\">BabyStepsModel<\/a>"],[100,4,"<a href=\"models\/CaptchaModel.php.html#4\">CaptchaModel<\/a>"],[47.916666666667,8,"<a href=\"models\/CommentsModel.php.html#5\">CommentsModel<\/a>"],[49.685534591195,26,"<a href=\"models\/DevicesModel.php.html#5\">DevicesModel<\/a>"],[21.052631578947,15,"<a href=\"models\/DevtagsModel.php.html#5\">DevtagsModel<\/a>"],[59.183673469388,16,"<a href=\"models\/FamilyModel.php.html#5\">FamilyModel<\/a>"],[79.245283018868,7,"<a href=\"models\/FencesModel.php.html#5\">FencesModel<\/a>"],[36.585365853659,7,"<a href=\"models\/LocusInfoModel.php.html#5\">Locusinfomodel<\/a>"],[55.421686746988,14,"<a href=\"models\/LocusModel.php.html#5\">LocusModel<\/a>"],[100,1,"<a href=\"models\/ModelBase.php.html#5\">ModelBase<\/a>"],[25,4,"<a href=\"models\/MsgModel.php.html#5\">MsgModel<\/a>"],[6,7,"<a href=\"models\/PraisesModel.php.html#5\">Praisesmodel<\/a>"],[15.217391304348,6,"<a href=\"models\/RenewModel.php.html#5\">RenewModel<\/a>"],[70.37037037037,6,"<a href=\"models\/TasksModel.php.html#5\">TasksModel<\/a>"],[26.153846153846,11,"<a href=\"models\/UsertasksModel.php.html#5\">UsertasksModel<\/a>"],[100,1,"<a href=\"models\/VerModel.php.html#5\">VerModel<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"BabyModule.php.html#22\">BabyModule::__construct<\/a>"],[15.789473684211,6,"<a href=\"BabyModule.php.html#31\">BabyModule::addBaby<\/a>"],[50,5,"<a href=\"BabyModule.php.html#67\">BabyModule::editBaby<\/a>"],[100,1,"<a href=\"BabyModule.php.html#90\">BabyModule::getListByUidDev<\/a>"],[100,3,"<a href=\"BabyModule.php.html#95\">BabyModule::getListByUid<\/a>"],[100,1,"<a href=\"BabyModule.php.html#109\">BabyModule::getExpireDevs<\/a>"],[100,2,"<a href=\"BabyModule.php.html#114\">BabyModule::babyIdGetShoeId<\/a>"],[100,1,"<a href=\"BabyModule.php.html#126\">BabyModule::getBabyName<\/a>"],[0,1,"<a href=\"BabyModule.php.html#134\">BabyModule::incGuards<\/a>"],[0,4,"<a href=\"BabyModule.php.html#145\">BabyModule::setSteps<\/a>"],[0,1,"<a href=\"CaptchaModule.php.html#23\">CaptchaModule::__construct<\/a>"],[53.333333333333,18,"<a href=\"CaptchaModule.php.html#42\">CaptchaModule::makeCaptcha<\/a>"],[90.47619047619,13,"<a href=\"CaptchaModule.php.html#124\">CaptchaModule::checkCaptcha<\/a>"],[0,1,"<a href=\"CommentsModule.php.html#25\">CommentsModule::__construct<\/a>"],[0,18,"<a href=\"CommentsModule.php.html#40\">CommentsModule::add<\/a>"],[83.333333333333,7,"<a href=\"CommentsModule.php.html#169\">CommentsModule::delComment<\/a>"],[67.857142857143,8,"<a href=\"CommentsModule.php.html#213\">CommentsModule::getCommentList<\/a>"],[100,1,"<a href=\"CommentsModule.php.html#256\">CommentsModule::anonymous function<\/a>"],[0,1,"<a href=\"DevicesModule.php.html#25\">DevicesModule::__construct<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#32\">DevicesModule::shoeListByUid<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#37\">DevicesModule::shoeListByBabyId<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#42\">DevicesModule::shoeListUnbind<\/a>"],[100,2,"<a href=\"DevicesModule.php.html#51\">DevicesModule::babyCount<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#59\">DevicesModule::getShoeMode<\/a>"],[50,5,"<a href=\"DevicesModule.php.html#70\">DevicesModule::bindBabyShoe<\/a>"],[78.947368421053,6,"<a href=\"DevicesModule.php.html#102\">DevicesModule::unbindBabyShoe<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#137\">DevicesModule::getUidByDev<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#146\">DevicesModule::devOff<\/a>"],[100,1,"<a href=\"DevicesModule.php.html#155\">DevicesModule::getBabyIdByShoeId<\/a>"],[0,2,"<a href=\"DevicesModule.php.html#160\">DevicesModule::updateShoeMode<\/a>"],[0,2,"<a href=\"DevicesModule.php.html#168\">DevicesModule::deleteShoe<\/a>"],[0,2,"<a href=\"DevicesModule.php.html#179\">DevicesModule::checkDevByQr<\/a>"],[0,1,"<a href=\"DevicesModule.php.html#191\">DevicesModule::getDevInfo<\/a>"],[0,1,"<a href=\"DevicesModule.php.html#196\">DevicesModule::getDevExpireByqr<\/a>"],[0,7,"<a href=\"DevicesModule.php.html#205\">DevicesModule::addShoe<\/a>"],[0,1,"<a href=\"DevicesModule.php.html#255\">DevicesModule::babyBinded<\/a>"],[100,1,"<a href=\"FamilyModule.php.html#23\">FamilyModule::__construct<\/a>"],[100,1,"<a href=\"FamilyModule.php.html#38\">FamilyModule::checkRelation<\/a>"],[66.666666666667,2,"<a href=\"FamilyModule.php.html#43\">FamilyModule::delBaby<\/a>"],[66.666666666667,2,"<a href=\"FamilyModule.php.html#52\">FamilyModule::cancelRel<\/a>"],[0,1,"<a href=\"FamilyModule.php.html#63\">FamilyModule::getUserInfo<\/a>"],[100,1,"<a href=\"FamilyModule.php.html#68\">FamilyModule::getUserInfoByMobi<\/a>"],[100,1,"<a href=\"FamilyModule.php.html#73\">FamilyModule::userInfoByIds<\/a>"],[100,2,"<a href=\"FamilyModule.php.html#78\">FamilyModule::issetHost<\/a>"],[66.666666666667,2,"<a href=\"FamilyModule.php.html#86\">FamilyModule::addRel<\/a>"],[0,6,"<a href=\"FamilyModule.php.html#100\">FamilyModule::guardian<\/a>"],[100,1,"<a href=\"FamilyModule.php.html#128\">FamilyModule::showFamList<\/a>"],[0,1,"<a href=\"FencesModule.php.html#14\">FencesModule::__construct<\/a>"],[66.666666666667,2,"<a href=\"FencesModule.php.html#19\">FencesModule::addFences<\/a>"],[66.666666666667,2,"<a href=\"FencesModule.php.html#27\">FencesModule::editFences<\/a>"],[66.666666666667,2,"<a href=\"FencesModule.php.html#35\">FencesModule::delFences<\/a>"],[100,1,"<a href=\"FencesModule.php.html#47\">FencesModule::showFenList<\/a>"],[0,1,"<a href=\"LocateModule.php.html#19\">LocateModule::__construct<\/a>"],[56,7,"<a href=\"LocateModule.php.html#33\">LocateModule::locateInfo<\/a>"],[0,4,"<a href=\"LocateModule.php.html#73\">LocateModule::showDayLocate<\/a>"],[0,2,"<a href=\"LocateModule.php.html#100\">LocateModule::showNearlyLocate<\/a>"],[0,14,"<a href=\"LocateModule.php.html#115\">LocateModule::getNewLocate<\/a>"],[0,1,"<a href=\"LocusModule.php.html#19\">LocusModule::__construct<\/a>"],[20,17,"<a href=\"LocusModule.php.html#34\">LocusModule::getLocusList<\/a>"],[100,1,"<a href=\"LocusModule.php.html#82\">LocusModule::anonymous function<\/a>"],[75,2,"<a href=\"LocusModule.php.html#116\">LocusModule::getCalList<\/a>"],[87.5,4,"<a href=\"LocusModule.php.html#145\">LocusModule::mark<\/a>"],[0,2,"<a href=\"LocusModule.php.html#167\">LocusModule::getMessList<\/a>"],[93.333333333333,4,"<a href=\"LocusModule.php.html#188\">LocusModule::getNewInfo<\/a>"],[100,1,"<a href=\"LocusModule.php.html#215\">LocusModule::getBabyId<\/a>"],[100,1,"<a href=\"ModuleBase.php.html#19\">ModuleBase::initModel<\/a>"],[100,3,"<a href=\"ModuleBase.php.html#29\">ModuleBase::_oauthrity<\/a>"],[100,2,"<a href=\"ModuleBase.php.html#42\">ModuleBase::_checkRelation<\/a>"],[0,10,"<a href=\"ModuleBase.php.html#59\">ModuleBase::_showLoginData<\/a>"],[0,4,"<a href=\"ModuleBase.php.html#154\">ModuleBase::getPushUid<\/a>"],[0,1,"<a href=\"MsgModule.php.html#10\">MsgModule::__construct<\/a>"],[47.826086956522,10,"<a href=\"MsgModule.php.html#15\">MsgModule::getMsgList<\/a>"],[100,3,"<a href=\"MyselfModule.php.html#24\">MyselfModule::getUserLevelInfo<\/a>"],[95,6,"<a href=\"MyselfModule.php.html#49\">MyselfModule::disturb<\/a>"],[0,1,"<a href=\"PraisesModule.php.html#28\">PraisesModule::__construct<\/a>"],[0,12,"<a href=\"PraisesModule.php.html#47\">PraisesModule::hit<\/a>"],[0,7,"<a href=\"PraisesModule.php.html#134\">PraisesModule::canclePraise<\/a>"],[0,16,"<a href=\"PraisesModule.php.html#175\">PraisesModule::showPraisesList<\/a>"],[100,1,"<a href=\"PraisesModule.php.html#215\">PraisesModule::anonymous function<\/a>"],[0,1,"<a href=\"RankModule.php.html#19\">RankModule::__construct<\/a>"],[46.428571428571,4,"<a href=\"RankModule.php.html#30\">RankModule::getOldRank<\/a>"],[58.490566037736,21,"<a href=\"RankModule.php.html#78\">RankModule::getTodayRank<\/a>"],[0,22,"<a href=\"RankModule.php.html#167\">RankModule::getAllRank<\/a>"],[0,1,"<a href=\"RenewModule.php.html#17\">RenewModule::__construct<\/a>"],[100,1,"<a href=\"RenewModule.php.html#27\">RenewModule::getRenew<\/a>"],[0,3,"<a href=\"RenewModule.php.html#35\">RenewModule::renewUpdate<\/a>"],[0,9,"<a href=\"RenewModule.php.html#55\">RenewModule::renewOperate<\/a>"],[0,4,"<a href=\"RenewModule.php.html#121\">RenewModule::wechatFailedPay<\/a>"],[0,1,"<a href=\"TasksModule.php.html#17\">TasksModule::__construct<\/a>"],[100,1,"<a href=\"TasksModule.php.html#27\">TasksModule::getCats<\/a>"],[72.881355932203,15,"<a href=\"TasksModule.php.html#38\">TasksModule::getTasksList<\/a>"],[36.170212765957,20,"<a href=\"TasksModule.php.html#145\">TasksModule::getUserTasksList<\/a>"],[100,1,"<a href=\"TasksModule.php.html#211\">TasksModule::addTask<\/a>"],[0,1,"<a href=\"TasksModule.php.html#223\">TasksModule::completeTask<\/a>"],[0,2,"<a href=\"TasksModule.php.html#235\">TasksModule::delTask<\/a>"],[0,1,"<a href=\"UnionModule.php.html#32\">UnionModule::__construct<\/a>"],[0,13,"<a href=\"UnionModule.php.html#50\">UnionModule::add<\/a>"],[100,3,"<a href=\"UnionModule.php.html#148\">UnionModule::checkuser<\/a>"],[0,1,"<a href=\"VerModule.php.html#15\">VerModule::__construct<\/a>"],[33.333333333333,11,"<a href=\"VerModule.php.html#26\">VerModule::getSoftVerInfo<\/a>"],[0,10,"<a href=\"VerModule.php.html#88\">VerModule::getHardInfo<\/a>"],[0,2,"<a href=\"models\/BabyModel.php.html#16\">BabyModel::add<\/a>"],[100,2,"<a href=\"models\/BabyModel.php.html#43\">BabyModel::edit<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#62\">BabyModel::getListByUidDev<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#83\">BabyModel::getListByUid<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#103\">BabyModel::setDevNum<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#118\">BabyModel::setDevUnbind<\/a>"],[0,1,"<a href=\"models\/BabyModel.php.html#133\">BabyModel::getBabyInfoById<\/a>"],[0,1,"<a href=\"models\/BabyModel.php.html#149\">BabyModel::setGuardsByBabyId<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#161\">BabyModel::getBabyName<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#173\">BabyModel::getBabyDevs<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#185\">BabyModel::getBabyPic<\/a>"],[100,1,"<a href=\"models\/BabyModel.php.html#197\">BabyModel::getListBybid<\/a>"],[0,1,"<a href=\"models\/BabyModel.php.html#209\">BabyModel::exec<\/a>"],[100,1,"<a href=\"models\/BabyRanksModel.php.html#10\">BabyRanksModel::getBabyId<\/a>"],[0,1,"<a href=\"models\/BabyRanksModel.php.html#25\">BabyRanksModel::addBabyId<\/a>"],[0,1,"<a href=\"models\/BabyRanksModel.php.html#37\">BabyRanksModel::getSummary<\/a>"],[0,1,"<a href=\"models\/BabyRanksModel.php.html#51\">BabyRanksModel::countBaby<\/a>"],[0,1,"<a href=\"models\/BabyRanksModel.php.html#61\">BabyRanksModel::getRankInfo<\/a>"],[0,1,"<a href=\"models\/BabyRanksModel.php.html#71\">BabyRanksModel::getRank<\/a>"],[0,1,"<a href=\"models\/BabyStepsModel.php.html#13\">BabyStepsModel::getBsidByBaby<\/a>"],[0,1,"<a href=\"models\/BabyStepsModel.php.html#32\">BabyStepsModel::addBabySteps<\/a>"],[0,1,"<a href=\"models\/BabyStepsModel.php.html#47\">BabyStepsModel::updateBabySteps<\/a>"],[0,1,"<a href=\"models\/BabyStepsModel.php.html#65\">BabyStepsModel::getStepsList<\/a>"],[0,1,"<a href=\"models\/BabyStepsModel.php.html#85\">BabyStepsModel::getStepsListByDate<\/a>"],[100,1,"<a href=\"models\/CaptchaModel.php.html#9\">CaptchaModel::getLastCapthaInfo<\/a>"],[100,1,"<a href=\"models\/CaptchaModel.php.html#26\">CaptchaModel::getCapthaTime<\/a>"],[100,1,"<a href=\"models\/CaptchaModel.php.html#46\">CaptchaModel::addCaptcha<\/a>"],[100,1,"<a href=\"models\/CaptchaModel.php.html#67\">CaptchaModel::updateCaptcha<\/a>"],[0,2,"<a href=\"models\/CommentsModel.php.html#11\">CommentsModel::addComment<\/a>"],[100,1,"<a href=\"models\/CommentsModel.php.html#34\">CommentsModel::getCommentList<\/a>"],[0,1,"<a href=\"models\/CommentsModel.php.html#48\">CommentsModel::getCommentBymaxId<\/a>"],[100,1,"<a href=\"models\/CommentsModel.php.html#63\">CommentsModel::delComment<\/a>"],[0,1,"<a href=\"models\/CommentsModel.php.html#77\">CommentsModel::getCommentByLcid<\/a>"],[100,1,"<a href=\"models\/CommentsModel.php.html#92\">CommentsModel::getLcidByUid<\/a>"],[100,1,"<a href=\"models\/CommentsModel.php.html#109\">CommentsModel::getLocusByLcid<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#12\">DevicesModel::getExpireDevsByBabyId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#31\">DevicesModel::getShoeIdByBabyId<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#47\">DevicesModel::getShoeIdsByBabyId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#62\">DevicesModel::getShoeListByUid<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#87\">DevicesModel::getShoeListByBabyId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#106\">DevicesModel::getUnBindShoesByUid<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#123\">DevicesModel::getBabyIdByShoeId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#141\">DevicesModel::getShoeModeByShoeId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#157\">DevicesModel::setShoeBindBabyId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#172\">DevicesModel::getUidByShoeId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#188\">DevicesModel::setDevStatusByShoeId<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#202\">DevicesModel::getBabyDevByShoeId<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#219\">DevicesModel::setModeByShoeId<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#235\">DevicesModel::setShoeUnbindBabyId<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#252\">DevicesModel::deleteShoe<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#264\">DevicesModel::getShoeIdByQr<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#279\">DevicesModel::getDevInfoByQr<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#296\">DevicesModel::updateExpires<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#312\">DevicesModel::setExpiresByDevid<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#328\">DevicesModel::getDevIdByqr<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#343\">DevicesModel::addShoe<\/a>"],[100,1,"<a href=\"models\/DevicesModel.php.html#369\">DevicesModel::getDevByUid<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#382\">DevicesModel::getBabysBinded<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#393\">DevicesModel::getNearlyDev<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#407\">DevicesModel::getUUidByBidUid<\/a>"],[0,1,"<a href=\"models\/DevicesModel.php.html#418\">DevicesModel::getDevInfoByUuids<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#12\">DevtagsModel::checkToken<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#29\">DevtagsModel::addToken<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#45\">DevtagsModel::updateToken<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#58\">DevtagsModel::del<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#72\">DevtagsModel::getPushInfo<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#86\">DevtagsModel::getPushInfoForIOS<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#96\">DevtagsModel::getIOSToken<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#106\">DevtagsModel::getANDToken<\/a>"],[100,1,"<a href=\"models\/DevtagsModel.php.html#117\">DevtagsModel::checkDisturb<\/a>"],[85.714285714286,3,"<a href=\"models\/DevtagsModel.php.html#134\">DevtagsModel::setDisturb<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#152\">DevtagsModel::getUserByUid<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#167\">DevtagsModel::getUserHaveCver<\/a>"],[0,1,"<a href=\"models\/DevtagsModel.php.html#182\">DevtagsModel::getUserNoCver<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#16\">FamilyModel::addRel<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#36\">FamilyModel::getRelationByUidBabyId<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#54\">FamilyModel::setBabyFamilyStatus<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#72\">FamilyModel::setRelByUidBabyId<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#89\">FamilyModel::getRelByBabyId<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#107\">FamilyModel::setGuardian<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#124\">FamilyModel::getFamList<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#147\">FamilyModel::checkRelByUid<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#161\">FamilyModel::hit<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#180\">FamilyModel::cancelPraises<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#198\">FamilyModel::incCommentNum<\/a>"],[100,1,"<a href=\"models\/FamilyModel.php.html#217\">FamilyModel::subCommentNum<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#234\">FamilyModel::getAuthUids<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#246\">FamilyModel::getAuthBaby<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#259\">FamilyModel::getAuthor<\/a>"],[0,1,"<a href=\"models\/FamilyModel.php.html#271\">FamilyModel::checkRelation<\/a>"],[100,1,"<a href=\"models\/FencesModel.php.html#17\">FencesModel::add<\/a>"],[100,1,"<a href=\"models\/FencesModel.php.html#44\">FencesModel::edit<\/a>"],[100,1,"<a href=\"models\/FencesModel.php.html#67\">FencesModel::del<\/a>"],[100,1,"<a href=\"models\/FencesModel.php.html#83\">FencesModel::getFenList<\/a>"],[0,1,"<a href=\"models\/FencesModel.php.html#107\">FencesModel::getBabyCheckinByUid<\/a>"],[0,1,"<a href=\"models\/FencesModel.php.html#119\">FencesModel::getBabyCheckin<\/a>"],[0,1,"<a href=\"models\/FencesModel.php.html#131\">FencesModel::exec<\/a>"],[100,1,"<a href=\"models\/LocusInfoModel.php.html#18\">Locusinfomodel::locate<\/a>"],[100,1,"<a href=\"models\/LocusInfoModel.php.html#39\">Locusinfomodel::locateForStarttime<\/a>"],[0,1,"<a href=\"models\/LocusInfoModel.php.html#54\">Locusinfomodel::checkLocus<\/a>"],[0,1,"<a href=\"models\/LocusInfoModel.php.html#65\">Locusinfomodel::nearlyCoor<\/a>"],[0,1,"<a href=\"models\/LocusInfoModel.php.html#78\">Locusinfomodel::getUuidByBaby<\/a>"],[0,1,"<a href=\"models\/LocusInfoModel.php.html#90\">Locusinfomodel::nearlyCoorByLiId<\/a>"],[0,1,"<a href=\"models\/LocusInfoModel.php.html#105\">Locusinfomodel::nearlyCoorOfToday<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#13\">LocusModel::hit<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#26\">LocusModel::cancelPraises<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#40\">LocusModel::setCommentNum<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#53\">LocusModel::cancelComment<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#67\">LocusModel::locusList<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#86\">LocusModel::locusBySinceId<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#105\">LocusModel::locusByMaxId<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#124\">LocusModel::callist<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#140\">LocusModel::getLocateInfo<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#155\">LocusModel::getCommentAndPraiseCount<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#172\">LocusModel::addMark<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#190\">LocusModel::getMark<\/a>"],[100,1,"<a href=\"models\/LocusModel.php.html#204\">LocusModel::getBabyIdByLsId<\/a>"],[0,1,"<a href=\"models\/LocusModel.php.html#220\">LocusModel::getBabyId<\/a>"],[100,1,"<a href=\"models\/ModelBase.php.html#10\">ModelBase::onConstruct<\/a>"],[100,1,"<a href=\"models\/MsgModel.php.html#13\">MsgModel::getMsgInfo<\/a>"],[0,1,"<a href=\"models\/MsgModel.php.html#38\">MsgModel::getMsgBySinceId<\/a>"],[0,1,"<a href=\"models\/MsgModel.php.html#65\">MsgModel::getMsgByMaxId<\/a>"],[0,1,"<a href=\"models\/MsgModel.php.html#89\">MsgModel::insertMsg<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#16\">Praisesmodel::hit<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#32\">Praisesmodel::delPraise<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#47\">Praisesmodel::getPraiseList<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#71\">Praisesmodel::getPraisesBySinceId<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#95\">Praisesmodel::getPraisesByMaxId<\/a>"],[0,1,"<a href=\"models\/PraisesModel.php.html#114\">Praisesmodel::getLsidByUid<\/a>"],[100,1,"<a href=\"models\/PraisesModel.php.html#134\">Praisesmodel::praisesCheck<\/a>"],[100,1,"<a href=\"models\/RenewModel.php.html#11\">RenewModel::getRenewByCrid<\/a>"],[0,2,"<a href=\"models\/RenewModel.php.html#28\">RenewModel::addOrder<\/a>"],[0,1,"<a href=\"models\/RenewModel.php.html#60\">RenewModel::getRenewByRono<\/a>"],[0,1,"<a href=\"models\/RenewModel.php.html#76\">RenewModel::addRenewLog<\/a>"],[0,1,"<a href=\"models\/RenewModel.php.html#91\">RenewModel::setOrderStatus<\/a>"],[100,1,"<a href=\"models\/TasksModel.php.html#11\">TasksModel::getTaskCats<\/a>"],[100,1,"<a href=\"models\/TasksModel.php.html#23\">TasksModel::getListByTcid<\/a>"],[100,1,"<a href=\"models\/TasksModel.php.html#37\">TasksModel::getTaskByWhere<\/a>"],[0,1,"<a href=\"models\/TasksModel.php.html#52\">TasksModel::getLastTaskByGroup<\/a>"],[100,1,"<a href=\"models\/TasksModel.php.html#64\">TasksModel::getTaskByTid<\/a>"],[0,1,"<a href=\"models\/TasksModel.php.html#77\">TasksModel::taskCount<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#23\">UsertasksModel::add<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#52\">UsertasksModel::updateProgress<\/a>"],[100,1,"<a href=\"models\/UsertasksModel.php.html#66\">UsertasksModel::receivedTasks<\/a>"],[100,1,"<a href=\"models\/UsertasksModel.php.html#80\">UsertasksModel::getLastTaskByGroup<\/a>"],[100,1,"<a href=\"models\/UsertasksModel.php.html#94\">UsertasksModel::checkTask<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#106\">UsertasksModel::getTaskInfo<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#120\">UsertasksModel::complete<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#140\">UsertasksModel::del<\/a>"],[100,1,"<a href=\"models\/UsertasksModel.php.html#156\">UsertasksModel::getUserTasks<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#169\">UsertasksModel::getUserTasksBySTime<\/a>"],[0,1,"<a href=\"models\/UsertasksModel.php.html#182\">UsertasksModel::getUserTasksByMTime<\/a>"],[100,1,"<a href=\"models\/VerModel.php.html#11\">VerModel::getVerByType<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

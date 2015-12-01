@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testShoeListByUid begin-->
+    <testShoeListByUid dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` = 100</where>
+        </data>
+    </testShoeListByUid>
+    <testShoeListByUid dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` = 1000</where>
+        </data>
+    </testShoeListByUid>
+    <testShoeListByUid dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>100</u_id>
+            <baby_id>1000</baby_id>
+        </data>
+    </testShoeListByUid>
+    <testShoeListByUid dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>1000</baby_id>
+        </data>
+    </testShoeListByUid>
+    <!-- method testShoeListByUid end-->
+
+    <!-- method testShoeListUnbind begin-->
+    <testShoeListUnbind dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` = 101</where>
+        </data>
+    </testShoeListUnbind>
+    <testShoeListUnbind dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>101</u_id>
+            <baby_id>0</baby_id>
+        </data>
+    </testShoeListUnbind>
+    <!-- method testShoeListUnbind end-->
+
+    <!-- method testBabyCount begin-->
+    <testBabyCount dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` = 102 OR `baby_id` = 2010 OR `dev_id` in (200, 201)</where>
+        </data>
+    </testBabyCount>
+    <testBabyCount dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>102</u_id>
+            <dev_id>200</dev_id>
+            <baby_id>2010</baby_id>
+        </data>
+    </testBabyCount>
+    <!-- method testBabyCount end-->
+
+    <!-- method testBabyCount begin-->
+    <testBabyCount dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` = 103 OR `dev_id` = 203</where>
+        </data>
+    </testBabyCount>
+    <testBabyCount dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>103</u_id>
+            <dev_id>203</dev_id>
+            <dev_work_mode>3</dev_work_mode>
+        </data>
+    </testBabyCount>
+    <!-- method testBabyCount end-->
+
+    <!-- method testBindBabyShoe begin-->
+    <testBindBabyShoe dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` = 104 OR `baby_id` = 204 OR `dev_id` = 304</where>
+        </data>
+    </testBindBabyShoe>
+    <testBindBabyShoe dbAdapter="appserv" table="cloud_babys" method="delete">
+        <data>
+            <where>`baby_id` = 204</where>
+        </data>
+    </testBindBabyShoe>
+    <testBindBabyShoe dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>104</u_id>
+            <dev_id>304</dev_id>
+        </data>
+    </testBindBabyShoe>
+    <testBindBabyShoe dbAdapter="appserv" table="cloud_babys" method="insert">
+        <data>
+            <baby_id>204</baby_id>
+            <baby_devs>1</baby_devs>
+        </data>
+    </testBindBabyShoe>
+    <!-- method testBindBabyShoe end-->
+
+    <!-- method testGetUidByDev begin-->
+    <testGetUidByDev dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`dev_id` = 305 OR `u_id` = 105</where>
+        </data>
+    </testGetUidByDev>
+    <testGetUidByDev dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <dev_id>305</dev_id>
+            <u_id>105</u_id>
+        </data>
+    </testGetUidByDev>
+    <!-- method testGetUidByDev end-->
+
+    <!-- method testGetBabyIdByShoeId begin-->
+    <testGetBabyIdByShoeId dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`dev_id` = 307 OR `u_id` = 107</where>
+        </data>
+    </testGetBabyIdByShoeId>
+    <testGetBabyIdByShoeId dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>107</u_id>
+            <baby_id>207</baby_id>
+            <dev_id>307</dev_id>
+        </data>
+    </testGetBabyIdByShoeId>
+    <!-- method testGetUidByDev end-->
+
+    <!-- method testDevOff begin-->
+    <testDevOff dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`dev_id` = 306</where>
+        </data>
+    </testDevOff>
+    <testDevOff dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <dev_id>306</dev_id>
+            <dev_status>1</dev_status>
+        </data>
+    </testDevOff>
+    <!-- method testDevOff end-->
+</init>

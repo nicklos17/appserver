@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testGetSoftVerInfo begin-->
+    <testGetSoftVerInfo dbAdapter="appserv" table="cloud_app_version" method="truncate">
+        <data></data>
+    </testGetSoftVerInfo>
+    <testGetSoftVerInfo dbAdapter="appserv" table="cloud_app_version" method="insert">
+        <data>
+            <av_version>"1.1.1"</av_version>
+            <av_type>1</av_type>
+        </data>
+    </testGetSoftVerInfo>
+    <!-- method testGetSoftVerInfo end-->
+</init>

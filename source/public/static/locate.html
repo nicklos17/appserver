@@ -1,0 +1,206 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script>
+        function getRad(d) {
+            return d * Math.PI / 180.0;
+        }
+
+        function getDistance(lat1, lng1, lat2, lng2) {
+            var radLat1 = getRad(lat1);
+            var radLat2 = getRad(lat2);
+            var a = getRad(lat1) - getRad(lat2);
+            var b = getRad(lng1) - getRad(lng2);
+            var s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(b / 2), 2)));
+            return s * 6378.137 * 1000;
+        }
+
+        function toLatLng(item) {
+            var coordinates = item.coordinates;
+            if (item.coords) {
+                coordinates = item.coords;
+            }
+            var latlng = coordinates.split(",");
+            latlng[0] = parseFloat(latlng[0]);
+            latlng[1] = parseFloat(latlng[1]);
+            return latlng;
+        }
+
+        var runner = {
+            points: null,
+            pointCount: 5,
+            distanceMax: 100,
+            radiusRatio: 1.5,
+            radiusMin: 40,
+            createCircle: function (index, core) {
+                var avgDist = 0;
+                var circle = {lat: core.lat, lng: core.lng};
+                for (var i = index; i >= 0; i--) {
+                    var p = runner.points[i];
+                    var latlng = toLatLng(p);
+                    // get distance
+                    var dist = getDistance(latlng[0], latlng[1], core.lat, core.lng);
+                    // console.log("get distance", i, dist);
+                    // if distance over
+                    if (dist > runner.distanceMax || p.radius != null) {
+                        var pointNumber = index - i + 1;
+                        if (pointNumber <= runner.pointCount) {
+                            return circle;
+                        }
+                        avgDist = avgDist / pointNumber;
+                        circle.index = i + 1;
+                        circle.radius = avgDist * runner.radiusRatio;
+                        if (circle.radius < runner.radiusMin) {
+                            circle.radius = runner.radiusMin;
+                        }
+                        return circle;
+                    }
+                    avgDist += dist;
+                }
+                circle.index = 0;
+                circle.radius = avgDist / index * runner.radiusRatio;
+                if (circle.radius < runner.radiusMin) {
+                    circle.radius = runner.radiusMin;
+                }
+                return circle;
+            },
+            inCircle: function (index) {
+                var lastCircle = runner.points[index - 1].radius;
+                if (!lastCircle) {
+                    return false;
+                }
+                var latlng = toLatLng(runner.points[index]);
+                var dist = getDistance(latlng[0], latlng[1], lastCircle.lat, lastCircle.lng);
+                //console.log("check in",index,dist,lastCircle.radius * runner.radiusRatio);
+                return dist < lastCircle.radius * runner.radiusRatio;
+            },
+            getMassCore: function (index) {
+                var points = runner.points.slice(index - runner.pointCount, index);
+                var lat = 0;
+                var lng = 0;
+                points.forEach(function (item) {
+                    var latlng = toLatLng(item);
+                    lat += latlng[0];
+                    lng += latlng[1];
+                });
+                return {lat: lat / points.length, lng: lng / points.length};
+            },
+            run: function (points) {
+                // parse data to string
+                runner.points = points;
+                if (runner.points instanceof Array == false) {
+                    //console.log("points parsed error");
+                    return "";
+                }
+
+                var allLength = runner.points.length;
+                for (var i = 0; i < allLength; i++) {
+                    //console.log("--------------------------", i);
+                    if (i < runner.pointCount) {
+                        continue;
+                    }
+
+                    // check in
+                    if (runner.inCircle(i)) {
+                        runner.points[i].radius = runner.points[i - 1].radius;
+                        //console.log("in circle point",i,runner.points[i].radius.index);
+                        continue
+                    }
+
+                    // get mass core
+                    var core = runner.getMassCore(i);
+
+                    // create circle
+                    var circle = runner.createCircle(i, core);
+                    if (circle.radius > 0) {
+                        //console.log("create circle", circle);
+                        for (var j = circle.index; j <= i; j++) {
+                            runner.points[j].radius = circle;
+                            //console.log("new circle point",j,circle.index);
+                        }
+                    }
+                }
+
+
+                var tmpPoint = null;
+                var resultData = [];
+                for (var k = 0; k < allLength; k++) {
+                    var p = runner.points[k];
+
+                    // if no circle, just push
+                    if (!p.radius || p.radius == "0") {
+                        // set tmp point
+                        if (tmpPoint) {
+                            //console.log("append circle",tmpPoint.radius.index);
+                            tmpPoint.radius = parseInt(tmpPoint.radius.radius).toString();
+                            resultData.push(tmpPoint);
+                            tmpPoint = null;
+                        }
+                        p.radius = "0";
+                        resultData.push(p);
+                        //console.log("append point",k);
+                        continue;
+                    }
+
+                    // if not tmp radius-ing point, set it
+                    if (!tmpPoint && p.radius.radius > 0) {
+                        if (tmpPoint) {
+                            //console.log("append circle",tmpPoint.radius.index);
+                            tmpPoint.radius = parseInt(tmpPoint.radius.radius).toString();
+                            resultData.push(tmpPoint);
+                            tmpPoint = null;
+                        }
+                        tmpPoint = p;
+                        //console.log("set circle", p.radius.index);
+                        continue;
+                    }
+
+                    // if same radius , update tmp point data
+                    if (tmpPoint.radius.index == p.radius.index) {
+                        tmpPoint.end = p.start;
+                        if (p.end > 0) {
+                            tmpPoint.end = p.end;
+                            if(tmpPoint.battery) {
+                                tmpPoint.battery = p.battery;
+                            }
+                        }
+                        if(tmpPoint.coords){
+                            tmpPoint.coords = p.radius.lat.toFixed(6) + "," + p.radius.lng.toFixed(6);
+                        }else {
+                            tmpPoint.coordinates = p.radius.lat.toFixed(6) + "," + p.radius.lng.toFixed(6);
+                        }
+                        //console.log("update circle",tmpPoint.radius.index);
+                    }else{
+                        //console.log("append circle",tmpPoint.radius.index);
+                        tmpPoint.radius = parseInt(tmpPoint.radius.radius).toString();
+                        resultData.push(tmpPoint);
+                        tmpPoint = null;
+                    }
+                }
+
+                if (tmpPoint) {
+                    // console.log("append circle",tmpPoint.radius.index);
+                    tmpPoint.radius = parseInt(tmpPoint.radius.radius).toString();
+                    resultData.push(tmpPoint);
+                    tmpPoint = null;
+                }
+                return resultData;
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        function caller(str) {
+            var data = JSON.parse(str);
+            var resultStr = JSON.stringify(runner.run(data));
+            window.android.runLocate(resultStr);
+        }
+        function runLocate(str) {
+            var data = JSON.parse(str);
+            return JSON.stringify(runner.run(data))
+        }
+    </script>
+</head>
+<body>
+html page
+</body>
+</html>

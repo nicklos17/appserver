@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<init>
+    <!-- method testCheckuser begin-->
+    <testCheckuser dbAdapter="appserv" table="cloud_devices" method="delete">
+        <data>
+            <where>`u_id` in (101, 102)</where>
+        </data>
+    </testCheckuser>
+    <testCheckuser dbAdapter="appserv" table="cloud_family" method="delete">
+        <data>
+            <where>`u_id` in (101, 102)</where>
+        </data>
+    </testCheckuser>
+    <testCheckuser dbAdapter="appserv" table="cloud_devices" method="insert">
+        <data>
+            <u_id>101</u_id>
+        </data>
+    </testCheckuser>
+    <testCheckuser dbAdapter="appserv" table="cloud_family" method="insert">
+        <data>
+            <u_id>101</u_id>
+        </data>
+    </testCheckuser>
+    <!-- method testCheckuser end-->
+</init>
